@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Modulo
 {
@@ -10,6 +6,36 @@ namespace Modulo
     {
         static void Main(string[] args)
         {
+
+            Console.WriteLine("Podaj liczbę a sprawdzę czy jest parzysta czy nieparzysta:  Jeśli chcesz zakończyć naciśnij Z");
+
+            bool close = false;
+
+
+            while (close == false)
+            {
+
+
+                string userInput = Console.ReadLine();
+
+                if (userInput == "Z" || userInput == "z")
+                    close = true;
+
+                else if (!(int.TryParse(userInput, out int number)))
+                {
+                    Console.WriteLine("Wprowadzono złe dane spróbuj ponownie");
+                }
+                else if (number % 2 == 0)
+                {
+                    Console.WriteLine("Liczba jest parzysta");
+                }
+                else
+                {
+                    Console.WriteLine("Liczba jest nieparzysta");
+                }
+
+            }
+
         }
     }
 }
