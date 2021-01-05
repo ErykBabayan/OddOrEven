@@ -6,15 +6,11 @@ namespace Modulo
     {
         static void Main(string[] args)
         {
-
-            Console.WriteLine("Podaj liczbę a sprawdzę czy jest parzysta czy nieparzysta:  Jeśli chcesz zakończyć naciśnij Z");
-
             bool close = false;
-
+            Console.WriteLine("Podaj liczbę a sprawdzę czy jest parzysta czy nieparzysta:  Jeśli chcesz zakończyć naciśnij Z");
 
             while (close == false)
             {
-
 
                 string userInput = Console.ReadLine();
 
